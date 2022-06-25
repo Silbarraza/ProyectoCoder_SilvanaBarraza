@@ -939,6 +939,25 @@ body {
     background-color: #FCDEA4;
 }
 
+/* Animación */
+@keyframes efecto {
+    0% {
+        background-color:#FCDEA4;
+    }
+    50% {
+        background-color:#E3E3E3;
+        transition: ease-in-out;
+    }
+    100% {
+        background-color:#FFD600;
+    }
+}
+
+.contactus__page3 {
+    background-color:#F7A400;
+    animation: efecto 1s linear 0s infinite alternate;
+}
+
 
 /* Page4 CONTACTO */
 

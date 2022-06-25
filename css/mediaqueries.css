@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-/* Nota: Si van de formato móvil a PC las media quarie debe ser: min-width. En cambio, si van de PC a móvil las media quaries debe decir: max-width. */
-=======
 /* Nota: Si van de formato móvil a PC las media quarie debe ser: min-width. En cambio, si van de PC a móvil las media quaries debe decir: max-width. */
 
 
@@ -24,10 +21,9 @@
 
     /* header */
     .header {
-        flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 0 50px;  
+        padding: 16px;  
     }
 
     .logo {
@@ -36,26 +32,19 @@
         padding: 16px;   
     }
 
-    .menu ul {
+    /* .menu ul {
         list-style: none;
         display: flex;
         flex-direction: row;
         flex-flow: nowrap;
         padding: 0 122px;            
-    }
+    } */
 
     .menu ul li a {
-        min-width: 100px;
+        min-width: 120px;
         padding: 5px 5px;
         margin: 5px;
-        background-color: rgb(0, 0, 0);
-        border-radius: 14px;
-        text-decoration: none;
-        color: #E3E3E3;
-        text-align: center;
         font-size: 12px;
-        font-weight: 400;
-        letter-spacing: 1.6px;
     }
 
     /*Submenu */
@@ -65,32 +54,30 @@
    
     /* Main intro*/
     
-    .main__index {    
+    /* .main__index {    
         grid-template-columns: 100%;
         grid-template-rows: 10% 27% 29% 34%;
         gap: 8px;
-    }
+    } */
     
     .intro,
     .intro1,
     .intro2,
     .intro3,
     .intro4 {    
-        min-height: 300px;
+        height: 200px;
     }
 
     .intro h1,
-    .intro2 h1 {
-    font-family: 'Pacifico', cursive;
-    font-weight: 100; 
-    font-size: 50px;
-    letter-spacing: 2px;
+    .intro1 h1,
+    .intro3 h1,
+    .intro4 h1 {    
+        font-size: 50px;
+        letter-spacing: 2px;
     }
 
     .intro p {
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: 1px;
+        font-size: 28px;
     }
 
     /* Main sección 1, 2 y 3*/
@@ -115,23 +102,18 @@
     .item1,
     .item2,
     .item3 {
-        width: 25%;
-        height: auto;
-        border-radius: 40px;
-        padding: 8px 16px;
-        justify-items: center;
+        width: 50%;
+        
     }
 
     /* Equipo */
 
     .foto1,
     .foto2 {
-        width: 30%;
-        height: auto;
-        padding: 16px;
-        border-radius: 25px;    
+        width: 60%;  
     }
 
+    /* Ubicación y contacto */
     .article p {
         padding: 12px;
         height: 150px;
@@ -139,10 +121,7 @@
     }
 
     .article__foto {    
-        min-width: 30px;
-        height: auto;
-        justify-content: center;
-        border-radius: 75px;
+        width: 70%;
     }
 
     /* Footer */
@@ -175,7 +154,6 @@
     }   
 }
 
-
 /* Page 1 Nosotros */
 
 /* Page 2 Productos */
@@ -183,4 +161,3 @@
 /* Page 3 Servicios */
 
 /* Page 4 Contacto */
->>>>>>> nueva_rama

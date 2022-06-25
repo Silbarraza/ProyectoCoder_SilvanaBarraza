@@ -387,7 +387,7 @@ body {
 }
 
 .article__foto {    
-    min-width: 65%;
+    width: 75%;
     height: auto;
     justify-content: center;
     border-radius: 75px;
@@ -420,8 +420,7 @@ body {
     display: block;
     list-style: none;
     padding: 0 0 8px 0;
-    min-width: 200px;
-   
+    min-width: 200px;   
 }
 
 .info ul li a {

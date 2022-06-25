@@ -151,10 +151,50 @@
 
     .info ul li a {
         text-align: center;
-    }   
+    }
+    
+    /* Page 1 Nosotros */
+
+    .aboutus1__info1 {
+        min-height: 320px;
+        height: 200px;
+        margin: 12px;
+        padding: 0 16px;
+        font-size: 18px;
+    }
+
+    .aboutus1__foto1 {    
+        width: 95%;
+        border-radius: 15px;
+    }
+
+    .aboutus2__info2,
+    .aboutus2__info3 {
+        padding: 8px;
+        /* margin: 8px; */
+        min-height: 300px;
+        font-size: 12px;
+    }
+
+    .aboutus2__info2 ul li,
+    .aboutus2__info3 ul li {
+        margin: 0 16px;
+        padding: 0px;
+    }
+
+    .aboutus2__foto2,
+    .aboutus2__foto3 {
+        min-width: 100%;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+    }
+    
 }
 
-/* Page 1 Nosotros */
+
+
+
 
 /* Page 2 Productos */
 

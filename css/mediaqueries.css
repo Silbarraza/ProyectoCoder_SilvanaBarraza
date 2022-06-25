@@ -1,11 +1,442 @@
 /* Nota: Si van de formato móvil a PC las media quarie debe ser: min-width. En cambio, si van de PC a móvil las media quaries debe decir: max-width. */
 
 
+
+
 /* index */
+
+/* Desktop */
+
+@media (min-width: 768px) and (max-width: 1520px) {
+    #grid-container {
+        display: grid;
+        grid-template-areas:"header"
+                            "main"
+                            "footer";
+        grid-template-columns: 100%; 
+        grid-template-rows: auto 90% auto;
+        /* gap: 8px; */
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+    
+    /* Header */
+    .header {
+        grid-area: header;
+        background-color: #DF9C16;
+        background-image: linear-gradient(90deg, #DF9C16 0%, #F7A400 80%, #FFD600 99%);
+        display: flex;
+        flex-flow: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 0 24px;
+    }
+    
+    .logo {
+        width: 7%;
+        height: auto;
+        padding: 4px;
+    }
+    
+    .menu ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0 122px;
+        margin: 4px 0px;        
+    }
+    
+    .menu ul li a {
+        display: inline-block; 
+        min-width: 150px;
+        padding: 6px 12px;
+        margin: 0 32px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 14px;
+        text-decoration: none;
+        color: #E3E3E3;        
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 1.6px;
+    }
+    
+    .menu ul li a:hover {
+        color: black;
+        background-color:#FCDEA4;
+    }
+    
+    /* Submenú */
+    .menu ul li ul {
+        display: none;/* oculto en reposo */
+        position: absolute;
+        margin: 0 -122px;          
+    }
+    
+    .menu ul li:hover ul {
+        display: block;/* visible mouse hover */    
+    }
+    
+    .menu ul li ul li a {
+        font-size: 14px;
+        text-align: left;
+        letter-spacing: 1.2px;
+        min-width: 230px;
+    }
+    
+    
+    
+    /* Main */
+    .main {
+        grid-area: main;
+    }
+    
+    .main__index {    
+        display: grid;
+        grid-template-areas:"intro"
+                            "seccion1"
+                            "seccion2"
+                            "seccion3";
+        grid-template-columns: 100%;
+        grid-template-rows: 500px 800px 900px 800px;
+        gap: 8px;
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+    
+    /* Intro */
+    .intro {
+        grid-area: intro;
+    }
+    
+    .intro,
+    .intro1,
+    .intro2,
+    .intro3,
+    .intro4 {    
+        min-height: 500px;
+        display: flex;
+        flex-flow: column wrap;
+        background-image: url(..//img/front-view-1800px.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .intro div,
+    .intro1 div,
+    .intro2 div,
+    .intro3 div,
+    .intro4 div {
+        height: 200px;
+        width: -webkit-fill-available;
+        background-color:rgba(0, 0, 0, 0.35);
+        color: #E3E3E3;
+        text-align: center;
+        text-shadow: rgb(11, 11, 11) 2px 2px 1px;
+    }
+    
+    .intro h1,
+    .intro1 h1,
+    .intro2 h1,
+    .intro3 h1,
+    .intro4 h1 {
+        font-family: 'Pacifico', cursive;
+        font-weight: 100; 
+        font-size: 80px;
+        letter-spacing: 2.8px;
+    }
+    
+    .intro p {
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    
+    /* Sección 1: Productos destacados */
+    .seccion1 {
+        grid-area: seccion1;
+        display: grid;
+        grid-template-areas:"seccion1__title seccion1__title seccion1__title"
+                            "item1 item2 item3"
+                            "bt1 bt1 bt1";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 8% 75% 17%;
+       /*  gap: 8px; */
+        background-color: #d9d9d9;
+        background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);  
+        justify-content: center;
+        align-items: center;
+        margin: 16px; 
+    }
+    
+    .seccion1__title {
+        grid-area: seccion1__title;
+    }
+    
+    .seccion1__title,
+    .seccion2__title,
+    .seccion3__title,
+    .aboutus1__title,
+    .aboutus2__title,
+    .contact__title,
+    .location__title {
+        /* margin: 10px 0px;
+        padding-bottom: 16px; */
+        color: #222121;
+        text-align: center;
+        text-shadow: rgb(210 197 197) 2px 2px 2px;
+        font-size: 28px;
+        letter-spacing: 1.6px;
+    }
+    
+    .item1 {
+        grid-area: item1;
+    } 
+    
+    .item2 {
+        grid-area: item2;
+    } 
+    
+    .item3 {
+        grid-area: item3;
+    }
+    
+    .item1,
+    .item2,
+    .item3 {
+        width: 100%;
+        height: auto;
+        border-radius: 40px;
+        padding: 8px 16px;
+        justify-items: center;
+    }
+    
+    .bt1,
+    .bt2,
+    .bt3{
+        grid-area: bt1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 32px 0 16px 0px;   
+    }
+    
+    .bt1 a,
+    .bt2 a,
+    .bt3 a {
+        background-color: black;
+        min-width: 200px;
+        padding: 10px 30px;
+        border-radius: 7px;
+        color: #E3E3E3;
+        text-decoration: none;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .bt1 a:hover,
+    .bt2 a:hover,
+    .bt3 a:hover {
+        color: black;
+        background-color: #FCDEA4;
+    }
+    
+    /* Equipo */
+    .seccion2 {
+        grid-area: seccion2;
+        display: grid;
+        grid-template-areas:"seccion2__title seccion2__title seccion2__title"
+                            "foto1 . foto2"
+                            "info1 . info2"
+                            "bt2 bt2 bt2";
+        grid-template-columns: 48% 4% 48%;
+        grid-template-rows: 8% 72% 10% 10%;
+       /*  gap: 8px; */                        
+        background-color: #d9d9d9;
+        background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);  
+        justify-items: center;
+        /* justify-content: center; */
+        align-items: center;
+        margin: 16px; 
+    }
+    
+    .seccion2__title {
+        grid-area: seccion2__title;
+    }
+    
+    .foto1 {
+        grid-area: foto1;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .foto2 {
+        grid-area: foto2;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .foto1,
+    .foto2 {
+        width: 70%;
+        height: auto;
+        padding: 16px;
+        border-radius: 25px;
+        
+    }
+    
+    .info1 {
+        grid-area: info1;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .info2 {
+        grid-area: info2;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .info1,
+    .info2 {
+        color: #222121;
+        /* text-shadow: rgb(11, 11, 11) 2px 2px 8px; */
+        margin: 5px 20px;
+        padding: 8px 8px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 1px;
+    
+    }
+    
+    .bt2 {
+        grid-area: bt2;
+        /* display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 32px 0 16px 0px;  */  
+    }
+    
+    /* .bt2 a {
+        background-color: black;
+        min-width: 200px;
+        padding: 10px 30px;
+        border-radius: 7px;
+        color: #E3E3E3;
+        text-decoration: none;
+        text-align: center;
+        align-items: center;
+    } */
+    
+    /* .bt2 a:hover {
+        color: black;
+        background-color: #FCDEA4;
+    } */
+    
+    /* Info y dirección */
+    .seccion3 {
+        grid-area: seccion3;
+        display: grid;
+        grid-template-areas:"seccion3__title article__foto"
+                            "article article__foto"
+                            "bt3 article__foto";
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 8% auto 15%;
+        gap:8px;
+        background-color: #d9d9d9;
+        background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);  
+        justify-items: center;
+        align-items: center;
+        padding: 8px;
+        margin: 16px;
+    }
+    
+    .seccio3__title {
+        grid-area: seccion3__title;
+    }
+    
+    .article {
+        grid-area: article;
+    }
+    
+    
+    .article p {
+        background-color: rgba(176, 176, 176, 0.8);
+        min-width: 200px;
+        height: 200px;
+        margin: 56px;
+        padding: 30px;
+        color: black;
+        text-align: left;
+        font-size: 24px;
+        align-items: center;
+    }
+    
+    .article__foto {
+        grid-area: article__foto;
+    }
+    
+    .article__foto {    
+        min-width: 65%;
+        height: auto;
+        justify-content: center;
+        border-radius: 75px;
+    }
+    
+    .bt3 {
+        grid-area: bt3;
+    }
+    /* Footer */
+    .footer {
+        grid-area: footer;
+        background-color: #DF9C16;
+        background-image: linear-gradient(90deg, #DF9C16 0%, #F7A400 80%, #FFD600 99%);
+        display: flex;
+        flex-flow: wrap;
+        align-items:flex-start;
+        justify-content: space-between;
+        padding: 8px 24px;
+    }
+    
+    .info h3 {
+        padding: 4px 0px;
+        font-size: 24px;
+        font-family: 'Pacifico', cursive;
+        font-weight: lighter;
+        letter-spacing: 1.6px;
+    }
+    
+    .info ul {
+        display: block;
+        list-style: none;
+        padding: 0 0 8px 0;
+        min-width: 200px;
+       
+    }
+    
+    .info ul li a {
+        color: black;
+        text-decoration: none;
+        text-align: justify;
+        letter-spacing: 1.2px;
+    }
+    
+    .footer a:hover {
+        text-decoration: underline;
+    }
+
+
+}
+
 
 /* Tablet 768 */
 
-@media (min-width: 768px) {
+@media (min-width: 320px) and (max-widht: 768px) {
     /* contenerdor padre */ 
     #grid-container {
         display: grid;

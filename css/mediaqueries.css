@@ -15,11 +15,8 @@
                             "main"
                             "footer";
         grid-template-columns: 100%;
-        grid-template-rows: auto 81% auto;
-        /* gap: 8px; */
-        /* align-items: center;
-        justify-content: center;
-        justify-items: center; */                  
+        grid-template-rows: auto 90% auto;
+                          
     }
 
     /* header */
@@ -66,16 +63,9 @@
     /* Main intro*/
     
     .main__index {    
-        /* display: grid;
-        grid-template-areas:"intro"
-                            "seccion1"
-                            "seccion2"
-                            "seccion3"; */
         grid-template-columns: 100%;
         grid-template-rows: 10% 27% 29% 34%;
         gap: 8px;
-        /* align-items: center; */
-        /* justify-content: center; */
     }
     
     .intro,
@@ -84,10 +74,7 @@
     .intro3,
     .intro4 {    
         min-height: 300px;
-        
     }
-
-
 
     .intro h1,
     .intro2 h1 {

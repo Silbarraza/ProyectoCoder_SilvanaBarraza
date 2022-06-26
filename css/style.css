@@ -876,8 +876,8 @@ body {
     grid-area: service1__foto;
     padding: 8px;
     margin-left: 16px;
-    min-height: auto;
-    min-width: 75%;
+    height: auto;
+    width: 75%;
     border-radius: 35px;
 }
 
@@ -893,7 +893,7 @@ body {
 .service3__foto {
     padding: 8px;
     margin-left: 16px;
-    min-width: 70%;
+    width: 80%;
     height: auto;
     border-radius: 45px;
 }

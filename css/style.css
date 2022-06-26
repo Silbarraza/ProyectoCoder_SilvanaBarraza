@@ -874,10 +874,10 @@ body {
 
 .service1__foto {
     grid-area: service1__foto;
-    padding: 16px;
-    margin-left: 32px;
+    padding: 8px;
+    margin-left: 16px;
     min-height: auto;
-    min-width: 80%;
+    min-width: 75%;
     border-radius: 35px;
 }
 
@@ -891,9 +891,9 @@ body {
 
 .service2__foto,
 .service3__foto {
-    padding: 16px;
-    margin-left: 48px;
-    min-width: 80%;
+    padding: 8px;
+    margin-left: 16px;
+    min-width: 70%;
     height: auto;
     border-radius: 45px;
 }
